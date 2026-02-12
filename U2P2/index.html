@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Shopping Cart</h1>
+  </header>
+
+  <main>
+    <section id="product-list">
+      <h2>Products</h2>
+
+      <div class="product">
+        <img src="images/jack fruit.jpg" width="150"> 
+        <span><b>Jack Fruit</b></span>
+        <button onclick="addToCart('Jack Fruit', 10)">Add to Cart (Rs.10)</button>
+      </div>
+
+      <div class="product">
+        <img src="images/mango.jpg" width="150"> 
+        <span><b>Mango</b></span>
+        <button onclick="addToCart('Mango', 15)">Add to Cart (Rs.15)</button>
+      </div>
+
+      <div class="product">
+        <img src="images/papaya.jpg" width="150"> 
+        <span><b>Papaya</b></span>
+        <button onclick="addToCart('Papaya', 20)">Add to Cart (Rs.20)</button>
+      </div>
+    </section>
+
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+      <p id="totalPrice">Total Price: Rs.0</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Shopping Cart </p>
+  </footer>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
